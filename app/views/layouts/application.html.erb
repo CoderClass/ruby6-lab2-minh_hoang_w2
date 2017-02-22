@@ -36,7 +36,10 @@
       </ul>
     </div>
   </nav>
-
+  
+  <% if flash.count > 0 %>
+    <p><%=  flash_messages %></p>
+  <%end%>
   <%= yield %>
 
   <footer class="footer-12">
